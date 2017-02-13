@@ -1,0 +1,536 @@
+<dom-module id="mv-details">
+	<style>
+		/* The Overlay (background) */
+		
+		.overlay {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			/* Stay in place */
+			z-index: 1;
+			/* Sit on top */
+			left: 0;
+			top: 0;
+			overflow-x: hidden;
+			/* Disable horizontal scroll */
+			overflow-y: hidden;
+			background-color: #FFF;
+		}
+		/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+		/*@media screen and (max-height: 450px) {
+    .overlay .right {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}*/
+		
+		.right {
+			float: right;
+		}
+		
+		.container {
+			@apply(--layout-vertical);
+		}
+		
+		.childContainer {
+			@apply(--layout-horizontal);
+		}
+		
+		.flexchild {
+			background-color: var(--paper-grey-200);
+			/*padding-left: 20px;*/
+			@apply(--layout-flex);
+			@apply(--paper-font-common-base);
+		}
+		
+		.right {
+			text-align: right;
+			color: white;
+		}
+		
+		#dialog h3 {
+			padding: 5px;
+			margin: 0;
+		}
+		
+		#playDiv h3 {
+			padding: 5px;
+			margin: 0;
+			background-color: black;
+			height: 45px;
+		}
+		
+		div.advertisement1 {
+			height: 80px;
+			background-image: url('../assets/images/advert.jpg');
+			background-repeat: no-repeat;
+			float: left;
+			width: 792px;
+		}
+		
+		div.advertisement2 {
+			height: 80px;
+			background-image: url('../assets/images/example80.png');
+			background-repeat: no-repeat;
+			/*background-size: 800px 80px;*/
+			float: right;
+			width: 790px;
+		}
+		
+		.paper-dialog-0>*:last-child {
+			margin-bottom: 0;
+		}
+		
+		section.trailer {
+			cursor: pointer;
+		}
+		
+		section.trailer>paper-button {
+			background-color: #ed3b3b;
+			color: white;
+			margin-top: 15px;
+			margin-left: 0px;
+		}
+		
+		#playDiv {
+			display: none;
+		}
+		
+		.center {
+			margin-left: 400px;
+			margin-right: 400px;
+		}
+		
+		#smallPoster {
+			position: absolute;
+			top: 300px;
+			padding-left: 15px;
+		}
+		
+		.titleDiv {
+			margin-left: 240px;
+		}
+		
+		.buttons {
+			position: relative;
+			padding: 8px 8px 8px 24px;
+			margin: 0;
+			color: var(--paper-dialog-button-color, --primary-color);
+			@apply(--layout-horizontal);
+			@apply(--layout-end-justified);
+		}
+		
+		#poster {
+			width: 600px;
+		}
+		
+		#castDiv {
+			width: 600px;
+			margin-left: 400px;
+			margin-right: 400px;
+		}
+		
+		#castDiv p {
+			padding-top: 35px;
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		
+		#childDiv {
+			width: 600px;
+		}
+		
+		ul {
+			padding-left: 15px;
+		}
+		
+		li {
+			font-weight: bold;
+		}
+		
+		article>h1 {
+			margin-bottom: 0px;
+		}
+		
+		article>p {
+			margin-top: 0px;
+			font-size: 12px;
+		}
+	</style>
+	<template>
+		<paper-progress id="progress"></paper-progress>
+		<div class="container">
+			<div class="center">
+				<paper-card id="poster" image="{{movie.VideoPosterFileId}}">
+					<paper-ripple></paper-ripple>
+				</paper-card>
+			</div>
+
+			<div class="flexchild center" id="childDiv">
+				<div id="smallPoster">
+					<paper-card image="{{movie.VideoSmallPosterFileId}}">
+						<paper-ripple></paper-ripple>
+					</paper-card>
+				</div>
+				<div class="titleDiv">
+					<article>
+						<h1>{{movie.VideoTitle}}</h1>
+						<p>[[VideoInfo]]</p>
+					</article>
+					<section class="trailer">
+						<paper-button raised on-tap="playTrailer">
+							Play Trailer
+						</paper-button>
+						<paper-button raised on-tap="playTrailer">
+							Play Video
+						</paper-button>
+					</section>
+				</div>
+			</div>
+			<div id="castDiv" class="flexchild">
+				<p>{{movie.VideoDescription}}</p>
+				<ul>
+					<li>Director</li>
+					[[Directors]]
+					<li> <br/></li>
+					<li>Actors</li>
+					[[Actors]]
+					<li><br/></li>
+					<li>Writers</li>
+					[[Writers]]
+				</ul>
+			</div>
+
+			<div id="playDiv" class="overlay">
+				<h3>
+					<paper-icon-button class="right" icon="close" on-tap="clearModal"></paper-icon-button>
+				</h3>
+				<div id="jwPlayer"></div>
+				<div class="advertisement1"></div>
+				<div class="advertisement2"></div>
+			</div>
+
+		</div>
+		<iron-ajax url="/assets/genreVideos.json" id="ajaxElement" handle-as="json" on-response="movieResponse"></iron-ajax>
+
+	</template>
+	<script>
+    Polymer({
+        is: "mv-details",
+        properties: {
+            omdbURL: {
+                type: String,
+                value: ''
+            },
+            imdbID: {
+                type: String,
+                value: ''
+            },
+            route: {
+                type: Object,
+                reflectToAttribute: true
+            },
+            movie: {
+                type: Object,
+                value: {}
+            },
+            Directors: {
+                type: String,
+                value: ''
+            },
+            Actors: {
+                type: String,
+                value: ''
+            },
+            Writers: {
+                type: String,
+                value: ''
+            },
+            VideoInfo: {
+                type: String,
+                value: ''
+            },
+
+            adInterval:{
+                type: Number,
+                value: 10,
+                observer:"SyncTimer"
+            },
+            tempTimer:{
+                type: Number,
+                value: 10
+            },
+            reset:{
+                type: Number,
+                value: 10,
+            },
+             adTimer:{
+                type: Number,
+                value: 10
+            },
+            eventFired:{
+                type: Boolean,
+                value: false
+            },
+            //yet to be reset on play trailer..
+            seekAferAd:{
+                type: Boolean,
+                value: false
+            },
+
+        },
+        observers: [
+            '_routePageChanged(routeData.page)',
+        ],
+        _routePageChanged: function (routeData) {
+            //console.log("From mv-details:", routeData);
+
+        },
+        SyncTimer:function(newValue, oldValue){
+            console.log("SyncTimer",newValue, oldValue);
+            if(newValue) this.adTimer=newValue;
+            console.log('adTimer',this.adTimer);
+        },
+        attributeChanged: function () {
+            this.imdbID = this.route.path.slice(1);
+            this.omdbURL = 'http://www.omdbapi.com/?i=' + this.route.path.slice(1);
+            this.$.ajaxElement.generateRequest();
+        },
+        movieResponse: function (response) {
+            //var movies = response.detail.response;
+            var movies = [];
+            debugger;
+            response.detail.response.map(function (el) {
+                return el.Videos;
+            }).map(function (items) {
+                items.forEach(function (item) {
+                    movies.push(item);
+                });
+            });
+            //
+            //console.log(movies, this.imdbID);
+            var iID = this.imdbID;
+            var fMovies = movies.filter(function (mv) {
+                return mv.Id == iID;
+            });
+
+            this.movie = fMovies[0];
+            if (!this.movie) return;
+
+            this.formatVideoInfo();
+
+            var directors = this.movie.VideoCast.filter(function (cast) {
+                return cast.CastRole === "Director"
+            }).map(function (item) {
+                return item.CastList.toString();
+            });
+            this.Directors = directors[0];
+
+            var actors = this.movie.VideoCast.filter(function (cast) {
+                return cast.CastRole === "Actors"
+            }).map(function (item) {
+                return item.CastList.toString();
+            });
+            this.Actors = actors[0];
+
+            writers = this.movie.VideoCast.filter(function (cast) {
+                return cast.CastRole === "Writers"
+            }).map(function (item) {
+                return item.CastList.toString();
+            });
+            this.Writers = writers[0];
+
+            var player = jwplayer('jwPlayer');
+            document.getElementById("playDiv").style.display = 'none';
+            var tUrl = this.movie.VideoTrailerFileId ? this.movie.VideoTrailerFileId : '//content.jwplatform.com/manifests/1b02B03R.m3u8';
+            var posterUrl=this.movie.VideoPosterFileId;
+            player.setup({
+                file: tUrl,
+                image: this.movie.VideoPosterFileId.replace('https:', ''),
+                autostart: false,
+                width: screen.availWidth,
+                height: screen.availHeight - 200
+            });
+
+
+            //var adInterval = 10;
+            //var tempTimer = adInterval; // this has to be adInterval Observer..
+            //var reset = adInterval;
+            //var eventFired = false;
+            //var adTimer = adInterval;
+ var self = this;
+
+            player.on('time', function (e) {
+                //seeked = false;
+                //player.off('seek');
+                var duration = e.duration;
+                var pos = Math.floor(e.position);
+                //adTimer = adInterval;
+
+                console.log('playing: ', pos, ' | ', self.adTimer, ' | ',self.eventFired, ' | ',self.reset);
+                //console.log('playing Video: ', this.getPlaylist()[0].file);
+                self.seekAferAd=false;
+                if (this.getPlaylist()[0].file == tUrl) {
+                    
+                    if (!self.eventFired && pos == self.adTimer && pos >= self.reset) {
+                        //debugger;
+                        console.log('Ad - ready to play: ', pos, ' | ',self.adTimer);
+
+                        self.eventFired = true;
+                        this.pause(true);
+
+                        this.load({
+                            file: "https://www.youtube.com/watch?v=kUpWIMyK6lA",
+                            image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk5NTI5MjY0NV5BMl5BanBnXkFtZTgwNzEyMTE2MDI@._V1_SX300.jpg",
+                            autostart: true
+                        }); 
+                        var slider = document.querySelector('.jw-slider-time.jw-background-color.jw-reset.jw-slider-horizontal.jw-reset');
+                        slider.style.display='none';
+
+                        this.seek(1).play();
+                        //this.pause(false);
+                        //this.play();
+                    }
+                }
+            });
+
+        var self = this;
+            player.on('complete', function (e) {
+                //debugger;
+                if (this.getPlaylist()[0].file !== tUrl) {
+
+                    this.load({
+                        file: tUrl,
+                        image: posterUrl,
+                        autostart: false,
+                    });
+                    var slider = document.querySelector('.jw-slider-time.jw-background-color.jw-reset.jw-slider-horizontal.jw-reset');
+                    slider.style.display='inline';
+
+                    self.eventFired = false;
+
+                    console.log('finished Ad: ');
+                  
+                    console.log("just before player seeks its old position at where it was paused: ", self.adTimer);
+                    
+                    self.seekAferAd=true;
+                    startPositions = [];
+                    this.seek(self.adTimer);
+
+                      self.adInterval = self.adInterval + self.reset;
+                    self.tempTimer = self.adInterval;
+
+                    this.play();
+                }
+                else {
+                    self.adInterval = 10;
+                    self.tempTimer = self.adInterval;
+                    self.adTimer = 0;
+                    this.stop();
+                }
+            });
+
+            var positionBeforeSeek;
+            var startPositions = [];
+             var self = this;
+            player.on('seek', function (e) {
+                if(self.seekAferAd) return;
+                console.log("entered seek")
+                console.log("paused video")
+
+                //this.pause(true);
+
+                console.log("resumed video")
+
+                if (!positionBeforeSeek) {
+                    positionBeforeSeek = e.position;
+                    startPositions.push(positionBeforeSeek);
+                }
+
+                console.log("seek position", positionBeforeSeek)
+
+            });
+
+             var self = this;
+            player.on('seeked', function () {
+                if(self.seekAferAd) return;
+
+                console.log("entered seeked")
+
+                var offset = this.getPosition();
+                
+                console.log("offset: ", offset)
+
+                console.log('startPositions:', startPositions);
+
+                if (startPositions.length > 0)
+                    positionBeforeSeek = startPositions[0]
+                else
+                    positionBeforeSeek = 0;
+
+                var secSeeked = offset - positionBeforeSeek;
+                console.log("osecSeekedffset: ", secSeeked)
+
+                console.log("adInterval - before : ", self.tempTimer)
+
+                if (secSeeked < 0) {
+                    self.adInterval = Math.floor(self.tempTimer - secSeeked);
+                }
+                else if (secSeeked > 0) {
+                    self.adInterval = Math.floor(self.tempTimer + secSeeked);
+                }
+
+                console.log("adInterval - After : ", self.adInterval)
+
+                positionBeforeSeek = undefined
+                //this.pause(false);
+                this.play();
+
+            });
+
+        },
+        playTrailer: function () {
+            document.getElementById("playDiv").style.display = 'block';
+            document.getElementById("playDiv").style.height = "100%";
+            document.getElementById("playDiv").style.width = "100%";
+
+            var player = jwplayer('jwPlayer');
+            var fulsc = document.querySelector('.jw-icon-fullscreen');
+            fulsc.hidden = true;
+            //
+            var url = this.movie.VideoTrailerFileId ? this.movie.VideoTrailerFileId : '//content.jwplatform.com/manifests/1b02B03R.m3u8';
+            player.load({
+                file: url,
+                autostart: true
+            });
+            var slider = document.querySelector('.jw-slider-time.jw-background-color.jw-reset.jw-slider-horizontal.jw-reset');
+            slider.style.display='inline';
+
+            //debugger;
+            this.resetVideoTimer();
+            player.play();
+        },
+        clearModal: function () {
+            //this.$.dialog.close();
+            document.getElementById("playDiv").style.display = 'none';
+            document.getElementById("playDiv").style.height = "0%";
+
+            var player = jwplayer('jwPlayer');
+            player.stop();
+        },
+        formatVideoInfo: function () {
+            if (this.movie)
+                this.VideoInfo = this.movie.VideoContentRating + ', ' + this.movie.VideoReleaseDate.split(' ')[2] + ', ' + this.movie.VideoRuntimeMinutes;
+        },
+        resetVideoTimer: function () {
+            console.log('reset adInterval');
+            this.adInterval = 10;
+            this.tempTimer = this.adInterval; // this has to be adInterval Observer..
+            this.eventFired = false;
+            console.log('end reset adInterval');
+        }
+
+    })
+</script>
+</dom-module>

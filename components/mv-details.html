@@ -373,6 +373,7 @@
 
                     console.log("just before player seeks its old position at where it was paused: ", adTimer);
 
+                    startPositions = [];
                     this.seek(adTimer);
                     //this.play();
                 }
@@ -387,7 +388,7 @@
 
             var positionBeforeSeek;
             var startPositions = [];
-            
+
             player.on('seek', function (e) {
                 console.log("entered seek")
                 console.log("paused video")
@@ -396,16 +397,28 @@
 
                 console.log("resumed video")
 
-                positionBeforeSeek = e.position;
+                if (!positionBeforeSeek) {
+                    positionBeforeSeek = e.position;
+                    startPositions.push(positionBeforeSeek);
+                }
+
                 console.log("seek position", positionBeforeSeek)
+
             });
 
             player.on('seeked', function () {
                 console.log("entered seeked")
-                console.log("seek position", positionBeforeSeek)
-
+                
                 var offset = this.getPosition();
+                
                 console.log("offset: ", offset)
+
+                console.log('startPositions:', startPositions);
+
+                if (startPositions.length > 0)
+                    positionBeforeSeek = startPositions[0]
+                else
+                    positionBeforeSeek = 0;
 
                 var secSeeked = offset - positionBeforeSeek;
                 console.log("osecSeekedffset: ", secSeeked)
@@ -421,6 +434,7 @@
 
                 console.log("Timer - After : ", timer)
 
+                positionBeforeSeek = undefined
                 this.pause(false);
 
             });

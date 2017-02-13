@@ -1,0 +1,1707 @@
+[
+    {
+        "Genre": {
+            "Name": "New Releases",
+            "Description": "Catch the latest blockbusters"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Gareth Edwards"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Felicity Jones",
+                            "Diego Luna",
+                            "Alan Tudyk"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Chris Weitz",
+                            "Tony Gilroy"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/lucasfilm/rogueoneastarwarsstory/rogue-one-a-star-wars-story-trailer-3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM4MTE1OTEwM15BMl5BanBnXkFtZTgwNjAzNjc3MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt3748528&apikey=9d5591cd",
+                "VideoTitle": "Rouge One",
+                "VideoTrailerFileId": "http://192.168.2.183/residentevilafinal.mp4",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": "1"
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Byron Howard"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Ginnifer Goodwin",
+                            "Jason Bateman",
+                            "Idris Elba"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Byron Howard"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/zootopia/zootopia-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwODk1Mjk4OF5BMl5BanBnXkFtZTgwNjc4OTk1NzE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Zootopia",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/zootopia/zootopia-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 2
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Jon Favreau"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Neel Sethi",
+                            "Bill Murray",
+                            "Ben Kingsley"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Justin Marks (screenplay)",
+                            "Rudyard Kipling (based on the books by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "After a threat from the tiger Shere Khan forces him to flee the jungle, a man-cub named Mowgli embarks on a journey of self discovery with the help of panther, Bagheera, and free spirited bear, Baloo.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/thejunglebook/junglebook-us-tlr4_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNTUxMDczMF5BMl5BanBnXkFtZTgwMTUzNDA4NjE@._V1_CR39,0,1842,1036_AL_UY268_CR10,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3NTUzNTI4MV5BMl5BanBnXkFtZTgwNjU0NjU5NzE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "The Jungle Book",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/thejunglebook/junglebook-us-tlr4_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 3
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Action & Adventure",
+            "Description": "Catch the latest action movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Antoine Fuqua"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Denzel Washington",
+                            "Chris Pratt",
+                            "Ethan Hawke"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Akira Kurosawa (based on the screenplay by)",
+                            "Shinobu Hashimoto (based on the screenplay by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Seven gunmen in the old west gradually come together to help a poor village against savage thieves.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/sony_pictures/themagnificentseven/the-magnificent-seven-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTExOTYyNTAyMTheQTJeQWpwZ15BbWU4MDA5NjE3NDkx._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2404435&apikey=9d5591cd",
+                "VideoTitle": "The Magnificent Seven",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/sony_pictures/themagnificentseven/the-magnificent-seven-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 4
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Gareth Edwards"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Felicity Jones",
+                            "Diego Luna",
+                            "Alan Tudyk"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Chris Weitz",
+                            "Tony Gilroy"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/lucasfilm/rogueoneastarwarsstory/rogue-one-a-star-wars-story-trailer-3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM4MTE1OTEwM15BMl5BanBnXkFtZTgwNjAzNjc3MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt3748528&apikey=9d5591cd",
+                "VideoTitle": "Rouge One",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/lucasfilm/rogueoneastarwarsstory/rogue-one-a-star-wars-story-trailer-3_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 5
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Justin Kurzel"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Michael Fassbender",
+                            "Marion Cotillard",
+                            "Jeremy Irons"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Michael Lesslie",
+                            "Adam Cooper"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/fox/assassinscreed/assassins-creed-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMyMzU3MzQ5MV5BMl5BanBnXkFtZTgwMTkzMTYzMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2094766&apikey=9d5591cd",
+                "VideoTitle": "Assassin's Creed",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/fox/assassinscreed/assassins-creed-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 6
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "David Ayer"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Will Smith",
+                            "Jared Leto",
+                            "Margot Robbie"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "David Ayer"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A secret government agency recruits some of the most dangerous incarcerated super-villains to form a defensive task force. Their first mission: save the world from the apocalypse.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/wb/suicidesquad/suicide-squad-comic-con-trailer_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk1ODM0MTAwMl5BMl5BanBnXkFtZTgwNjIzMTk1ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt1386697&apikey=9d5591cd",
+                "VideoTitle": "Suicide Squad",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/wb/suicidesquad/suicide-squad-comic-con-trailer_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 7
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Ron Clements"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Auli'i Cravalho",
+                            "Dwayne Johnson",
+                            "Rachel House"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Jared Bush (screenplay)",
+                            "Ron Clements (story by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/moana/moana-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMzNzc2ODAxMl5BMl5BanBnXkFtZTgwMjY4NDk2MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_QL50_SY1000_CR0,0,674,1000_AL_.jpg",
+                "VideoTitle": "Moana",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/moana/moana-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 8
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Animation",
+            "Description": "Catch the latest animated movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Christophe Lourdelet"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Matthew McConaughey",
+                            "Reese Witherspoon",
+                            "Seth MacFarlane"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Garth Jennings"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "In a city of humanoid animals, a hustling theater impresario's attempt to save his theater with a singing competition becomes grander than he anticipates even as its finalists' find that their lives will never be the same.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/universal/sing/sing-trailer-6_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg0MjA1NTM0M15BMl5BanBnXkFtZTgwNjYzOTk0MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt3470600&apikey=9d5591cd",
+                "VideoTitle": "Sing",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/universal/sing/sing-trailer-6_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 9
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Byron Howard"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Ginnifer Goodwin",
+                            "Jason Bateman",
+                            "Idris Elba"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Byron Howard"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "In a city of anthropomorphic animals, a rookie bunny cop and a cynical con artist fox must work together to uncover a conspiracy.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/zootopia/zootopia-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwODk1Mjk4OF5BMl5BanBnXkFtZTgwNjc4OTk1NzE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTMyMjEyNzIzMV5BMl5BanBnXkFtZTgwNzIyNjU0NzE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Zootopia",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/zootopia/zootopia-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 10
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Ron Clements"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Auli'i Cravalho",
+                            "Dwayne Johnson",
+                            "Rachel House"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Jared Bush (screenplay)",
+                            "Ron Clements (story by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches an impetuous Chieftain's daughter's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/moana/moana-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMzNzc2ODAxMl5BMl5BanBnXkFtZTgwMjY4NDk2MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI4MzU5NTExNF5BMl5BanBnXkFtZTgwNzY1MTEwMDI@._V1_QL50_SY1000_CR0,0,674,1000_AL_.jpg",
+                "VideoTitle": "Moana",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/moana/moana-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 11
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Andrew Stanton"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Ellen DeGeneres",
+                            "Albert Brooks",
+                            "Ed O'Neill"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Andrew Stanton (original story by)",
+                            "Andrew Stanton (screenplay)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The friendly but forgetful blue tang fish begins a search for her long-lost parents, and everyone learns a few things about the real meaning of family along the way.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/findingdory/findingdory-tlr3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUzNDE0NTE1Nl5BMl5BanBnXkFtZTgwNzQwNzk5ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2277860&apikey=9d5591cd",
+                "VideoTitle": "Finding Dory",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/findingdory/findingdory-tlr3_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 12
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Clay Kaytis",
+                            "Fergal Reilly"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Jason Sudeikis",
+                            "Josh Gad",
+                            "Danny McBride"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "John Cohen (story by)",
+                            "Mikael Hed (story by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Find out why the birds are so angry. When an island populated by happy, flightless birds is visited by mysterious green piggies, it's up to three unlikely outcasts - Red, Chuck and Bomb - to figure out what the pigs are up to.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/sony_pictures/theangrybirdsmovie/angrybirds-tlr3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MzkwODM0MF5BMl5BanBnXkFtZTgwMzI0OTA2ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTY3MjU0NDA0OF5BMl5BanBnXkFtZTgwNTc0MTU3OTE@._V1_UY268_CR3,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "The Angry Birds Movie",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/sony_pictures/theangrybirdsmovie/angrybirds-tlr3_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 13
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Comedy",
+            "Description": "Catch the latest comedy movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Damien Chazelle"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Ryan Gosling",
+                            "Emma Stone",
+                            "Rosemarie DeWitt"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Damien Chazelle"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Written and directed by Academy Award® nominee Damien Chazelle, LA LA LAND tells the story of Mia (Emma Stone), an aspiring actress, and Sebastian (Ryan Gosling), a dedicated jazz musician, who are struggling to make ends meet in a city known for crushing hopes and breaking hearts. Set in modern-day Los Angeles, this original musical about everyday life explores the joy and pain of pursuing your dreams.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/summit/lalaland/la-la-land-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzc4MDk2ODk4MF5BMl5BanBnXkFtZTgwMjQ2ODA1MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "La La Land",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/summit/lalaland/la-la-land-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 14
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "John Hamburg"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Zoey Deutch",
+                            "James Franco",
+                            "Tangie Ambrose"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Jonah Hill (story)",
+                            "John Hamburg (story)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A holiday gathering threatens to go off the rails when Ned Fleming realizes that his daughter's Silicon Valley billionaire boyfriend is about to pop the question.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/fox/whyhim/why-him-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwMzg0MDY5MF5BMl5BanBnXkFtZTgwMTMxMDE2MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt4501244&apikey=9d5591cd",
+                "VideoTitle": "Why Him?",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/fox/whyhim/why-him-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 15
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Tim Miller"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Ryan Reynolds",
+                            "Morena Baccarin",
+                            "T.J. Miller"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Rhett Reese",
+                            "Paul Wernick"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A fast-talking mercenary with a morbid sense of humor is subjected to a rogue experiment that leaves him with accelerated healing powers and a quest for revenge.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/fox/deadpool/deadpool-us-tlrd_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0Nzk0NzAzN15BMl5BanBnXkFtZTgwNTk1Njg5NzE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt1431045&apikey=9d5591cd",
+                "VideoTitle": "Deadpool",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/fox/deadpool/deadpool-us-tlrd_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 16
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Chris Renaud",
+                            "Yarrow Cheney"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Louis C.K.",
+                            "Eric Stonestreet",
+                            "Kevin Hart"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Cinco Paul",
+                            "Ken Daurio"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The quiet life of a terrier named Max is upended when his owner takes in Duke, a stray whom Max instantly dislikes.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/universal/thesecretlifeofpets/secretlivesofpets-tlr3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzgyMTMyNDg2NF5BMl5BanBnXkFtZTgwMDMyODQyOTE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2709768&apikey=9d5591cd",
+                "VideoTitle": "The Secret Life of Pets",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/universal/thesecretlifeofpets/secretlivesofpets-tlr3_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 17
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Todd Phillips"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Jonah Hill",
+                            "Miles Teller",
+                            "Steve Lantz"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Stephen Chin (screenplay)",
+                            "Todd Phillips (screenplay)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Based on the true story of two young men, David Packouz and Efraim Diveroli, who won a $300 million contract from the Pentagon to arm America's allies in Afghanistan.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/wb/wardogs/wardogs-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxNzk3NTk1OF5BMl5BanBnXkFtZTgwNzE1MjIzOTE@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2005151&apikey=9d5591cd",
+                "VideoTitle": "War Dogs",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/wb/wardogs/wardogs-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 18
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Documentary",
+            "Description": "Catch the latest documentaries"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Otto Bell"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Aisholpan Nurgaiv",
+                            "Daisy Ridley",
+                            "Rys Nurgaiv"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Otto Bell"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The Eagle Huntress follows Aisholpan, a 13-year-old girl, as she trains to become the first female in twelve generations of her Kazakh family to become an eagle hunter.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/sony/theeaglehuntress/the-eagle-huntress-trailer-1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU0NDMyMjQ5OV5BMl5BanBnXkFtZTgwODU1NDQ2OTE@._V1_CR39,0,1842,1036_AL_UY268_CR10,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjAxNDgwNDYzMl5BMl5BanBnXkFtZTgwNTQ3NDc3OTE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "The Eagle Huntress",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/sony/theeaglehuntress/the-eagle-huntress-trailer-1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 19
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "David Farrier",
+                            "Dylan Reeve"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "David Farrier",
+                            "Dylan Reeve",
+                            "David Starr"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Journalist David Farrier stumbles upon a mysterious tickling competition online. As he delves deeper he comes up against fierce resistance, but that doesn't stop him getting to the bottom of a story stranger than fiction.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/magnolia_pictures/tickled/tickled-tlr1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BNTU5MzA1ODQ5NV5BMl5BanBnXkFtZTgwOTgwMTc4ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt5278506&apikey=9d5591cd",
+                "VideoTitle": "Tickled",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/magnolia_pictures/tickled/tickled-tlr1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 20
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Clay Tweel (as J. Clay Tweel)"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Steve Gleason",
+                            "Mike Gleason",
+                            "Scott Fujita"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Clay Tweel (as J. Clay Tweel)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "After he is diagnosed with ALS, former professional football player Steve Gleason begins making a video diary for his unborn son, as he, his wife, and their friends and family work to raise money for ALS patients as his disease progresses.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/independent/gleason/gleason-tlr1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkwNTcwNjAyNV5BMl5BanBnXkFtZTgwMjU2OTAyOTE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0MDQ4MTk0NV5BMl5BanBnXkFtZTgwODU1NjAzOTE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Gleason",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/independent/gleason/gleason-tlr1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 21
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Alex Gibney"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "David Sanger",
+                            "Emad Kiyaei",
+                            "Eric Chien"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Alex Gibney"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A documentary focused on Stuxnet, a piece of self-replicating computer malware that the U.S. and Israel unleashed to destroy a key part of an Iranian nuclear facility, and which ultimately spread beyond its intended target.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/magnolia_pictures/zerodays/zerodays-tlr1b_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc1OTg2MDExMF5BMl5BanBnXkFtZTgwNTI5ODY5ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt5446858&apikey=9d5591cd",
+                "VideoTitle": "Zero Days",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/magnolia_pictures/zerodays/zerodays-tlr1b_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 22
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Drama",
+            "Description": "Catch the latest drama movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Morten Tyldum"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Jennifer Lawrence",
+                            "Chris Pratt",
+                            "Michael Sheen"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Morten Tyldum"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A spacecraft traveling to a distant colony planet and transporting thousands of people has a malfunction in its sleep chambers. As a result, two passengers are awakened 90 years early.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/sony_pictures/passengers/passengers-trailer-1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1MzMzMjUyOF5BMl5BanBnXkFtZTgwMjkzNjgwMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk4MjU3MDIzOF5BMl5BanBnXkFtZTgwMjM2MzY2MDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Passengers",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/sony_pictures/passengers/passengers-trailer-1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 23
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Denis Villeneuve"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Amy Adams",
+                            "Jeremy Renner",
+                            "Forest Whitaker"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Eric Heisserer (screenplay)",
+                            "Ted Chiang (based on the story \"Story of Your Life\" written by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "When 12 mysterious spacecraft appear around the world, linguistics professor Louise Banks is tasked with interpreting the language of the alien passengers inside.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/paramount/arrival/arrival-final-trailer_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzA4Mzg5OTY5Nl5BMl5BanBnXkFtZTgwMDk4ODg0MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2543164&apikey=9d5591cd",
+                "VideoTitle": "Arrival",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/paramount/arrival/arrival-final-trailer_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 24
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Peter Berg"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Mark Wahlberg",
+                            "Kurt Russell",
+                            "Douglas M. Griffin"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Matthew Michael Carnahan (screenplay)",
+                            "Matthew Sand (screenplay)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A dramatization of the April 2010 disaster when the offshore drilling rig, Deepwater Horizon, exploded and created the worst oil spill in U.S. history.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/summit/deepwaterhorizon/deepwater-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI2OTkxNDU5MF5BMl5BanBnXkFtZTgwMTcxNzEwOTE@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt1860357&apikey=9d5591cd",
+                "VideoTitle": "Deepwater Horizon",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/summit/deepwaterhorizon/deepwater-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 25
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "J.A. Bayona"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Lewis MacDougall",
+                            "Sigourney Weaver",
+                            "Felicity Jones"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Patrick Ness (screenplay)",
+                            "Patrick Ness (based upon the novel written by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A boy seeks the help of a tree monster to cope with his single mum's terminal illness.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/focus_features/amonstercalls/a-monster-calls-tlr3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzUyOTI1OTc2OV5BMl5BanBnXkFtZTgwMDEwNzM5MDI@._V1_CR0,59,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1OTA5OTkyNV5BMl5BanBnXkFtZTgwODMwNDU5OTE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "A Monster Calls",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/focus_features/amonstercalls/a-monster-calls-tlr3_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 26
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Family",
+            "Description": "Catch the latest family movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Jon Favreau"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Neel Sethi",
+                            "Bill Murray",
+                            "Ben Kingsley"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Justin Marks (screenplay)",
+                            "Rudyard Kipling (based on the books by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "After a threat from the tiger Shere Khan forces him to flee the jungle, a man-cub named Mowgli embarks on a journey of self discovery with the help of panther, Bagheera, and free spirited bear, Baloo.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/disney/thejunglebook/junglebook-us-tlr4_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTkyNTUxMDczMF5BMl5BanBnXkFtZTgwMTUzNDA4NjE@._V1_CR39,0,1842,1036_AL_UY268_CR10,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc3NTUzNTI4MV5BMl5BanBnXkFtZTgwNjU0NjU5NzE@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "The Jungle Book",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/disney/thejunglebook/junglebook-us-tlr4_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 27
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "David Yates"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Eddie Redmayne",
+                            "Katherine Waterston",
+                            "Alison Sudol"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "J.K. Rowling"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The adventures of writer Newt Scamander in New York's secret community of witches and wizards seventy years before Harry Potter reads his book in school.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/wb/fantasticbeastsandwheretofindthem/fantastic-beasts-trailer-5_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTExOTQ2NDg2MF5BMl5BanBnXkFtZTgwODYyOTYxMDI@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt3183660&apikey=9d5591cd",
+                "VideoTitle": "Fantastic Beasts and Where to Find Them",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/wb/fantasticbeastsandwheretofindthem/fantastic-beasts-trailer-5_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 28
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Walt Dohrn",
+                            "Mike Mitchell"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Anna Kendrick",
+                            "Justin Timberlake",
+                            "Zooey Deschanel"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Jonathan Aibel (screenplay)",
+                            "Glenn Berger (screenplay)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "After the Bergens invade Troll Village, Poppy, the happiest Troll ever born, and the curmudgeonly Branch set off on a journey to rescue her friends.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/fox/trolls/trolls-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyNDQzMjA1NV5BMl5BanBnXkFtZTgwOTgyMTMwMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt1679335&apikey=9d5591cd",
+                "VideoTitle": "Trolls",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/fox/trolls/trolls-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 29
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Roger Allers",
+                            "Rob Minkoff"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Matthew Broderick",
+                            "Jeremy Irons",
+                            "James Earl Jones"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Irene Mecchi (screenplay)",
+                            "Jonathan Roberts (screenplay)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Lion cub and future king Simba searches for his identity. His eagerness to please others and penchant for testing his boundaries sometimes gets him into trouble.",
+                "VideoFileId": "http://trailers.apple.com/movies/disney/lionking3d/lionking3d-tlr1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTU1MzkwNDI5OV5BMl5BanBnXkFtZTgwODU2MTkwMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt0110357&apikey=9d5591cd",
+                "VideoTitle": "The Lion King",
+                "VideoTrailerFileId": "http://trailers.apple.com/movies/disney/lionking3d/lionking3d-tlr1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 30
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Horror",
+            "Description": "Catch the latest horror movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Fede Alvarez"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Stephen Lang",
+                            "Jane Levy",
+                            "Dylan Minnette"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Fede Alvarez",
+                            "Rodo Sayagues"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Hoping to walk away with a massive fortune, a trio of thieves break into the house of a blind man who isn't as helpless as he seems.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/sony_pictures/dontbreathe/dontbreathe-tlr1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjIwNTY0NzgxM15BMl5BanBnXkFtZTgwMjY3OTM5ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt4160708&apikey=9d5591cd",
+                "VideoTitle": "Don't Breathe",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/sony_pictures/dontbreathe/dontbreathe-tlr1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 31
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "David F. Sandberg"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Teresa Palmer",
+                            "Gabriel Bateman",
+                            "Maria Bello"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Eric Heisserer (screenplay)",
+                            "David F. Sandberg (based on the short film by)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "When her little brother, Martin, experiences the same events that once tested her sanity, Rebecca works to unlock the truth behind the terror, which brings her face to face with an entity that has an attachment to their mother, Sophie.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/wb/lightsout/lightsout-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BNzg3NTM1Nzg2MV5BMl5BanBnXkFtZTgwMjg5NDYyOTE@._V1_CR0,59,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt4786282&apikey=9d5591cd",
+                "VideoTitle": "Lights Out",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/wb/lightsout/lightsout-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 32
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "André vredal"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Emile Hirsch",
+                            "Brian Cox",
+                            "Ophelia Lovibond"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Ian B. Goldberg",
+                            "Richard Naing"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A father and son, both coroners, are pulled into a complex mystery while attempting to identify the body of a young woman, who was apparently harboring dark secrets.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/ifc_films/the-autopsy-of-jane-doe/the-autopsy-of-jane-doe-trailer-1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA2NzM3MzI2Ml5BMl5BanBnXkFtZTgwNDYwMDY3MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA2MTEzMzkzM15BMl5BanBnXkFtZTgwMjM2MTM5MDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "The Autopsy of Jane Doe",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/ifc_films/the-autopsy-of-jane-doe/the-autopsy-of-jane-doe-trailer-1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 33
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Paul W.S. Anderson"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Ruby Rose, Milla Jovovich, Ali Larter"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Paul W.S. Anderson"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "Picking up immediately after the events in Resident Evil: Retribution, Alice (Milla Jovovich) is the only survivor of what was meant to be humanity's final stand against the undead. Now, she must return to where the nightmare began - The Hive in Raccoon City, where the Umbrella Corporation is gathering its forces for a final strike against the only remaining survivors of the apocalypse.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/sony_pictures/resident-evil-the-final-chapter/resident-evil-the-final-chapter-trailer-3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTUwNDAwMTUwOF5BMl5BanBnXkFtZTgwMjE2NjczMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0Mzc2OTQ0Ml5BMl5BanBnXkFtZTgwOTQ5MjE4MDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Resident Evil: The Final Chapter",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/sony_pictures/resident-evil-the-final-chapter/resident-evil-the-final-chapter-trailer-3_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 34
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Dan Trachtenberg"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "John Goodman",
+                            "Mary Elizabeth Winstead",
+                            "John Gallagher Jr."
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Josh Campbell (story)",
+                            "Matthew Stuecken (story)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "After getting in a car accident, a woman is held in a shelter with two men, who claim the outside world is affected by a widespread chemical attack.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/paramount/10cloverfieldlane/10cloverfieldlane-usca-tlr1_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzIxMTU4NTMzM15BMl5BanBnXkFtZTgwNjkxMTMwODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt1179933&apikey=9d5591cd",
+                "VideoTitle": "10 Cloverfield Lane",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/paramount/10cloverfieldlane/10cloverfieldlane-usca-tlr1_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 35
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Mystery & Suspense",
+            "Description": "Catch the latest mystery & suspense movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Tom Ford"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Amy Adams",
+                            "Jake Gyllenhaal",
+                            "Michael Shannon"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Tom Ford (screenplay)",
+                            "Austin Wright (novel)"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "An art gallery owner is haunted by her ex-husband's novel, a violent thriller she interprets as a veiled threat and a symbolic revenge tale.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/focus_features/nocturnal-animals/nocturnal-animals-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjI3NTY4Nzc1NF5BMl5BanBnXkFtZTgwODY3MTkzMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwMzMwMzgxNl5BMl5BanBnXkFtZTgwMTA0MTUzMDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Nocturnal Animals",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/focus_features/nocturnal-animals/nocturnal-animals-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 36
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Quentin Tarantino"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            " Samuel L. Jackson",
+                            "Kurt Russell",
+                            "Jennifer Jason Leigh"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Quentin Tarantino"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "In the dead of a Wyoming winter, a bounty hunter and his prisoner find shelter in a cabin currently inhabited by a collection of nefarious characters.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/weinstein/thehatefuleight/thehatefuleight-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjA1Nzc0ODkxOV5BMl5BanBnXkFtZTgwMzQwNjAyNzE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt3460252&apikey=9d5591cd",
+                "VideoTitle": "The Hateful Eight",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/weinstein/thehatefuleight/thehatefuleight-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 37
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Gore Verbinski"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Jason Isaacs",
+                            "Mia Goth",
+                            "Dane DeHaan"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Justin Haythe (screenplay)",
+                            "Justin Haythe (story by) "
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "An ambitious young executive is sent to retrieve his company's CEO from an idyllic but mysterious\"wellness center\" at a remote location in the Swiss Alps but soon suspects that the spa's miraculous treatments are not what they seem.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/fox/a-cure-for-wellness/a-cure-for-wellness-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2MjM2NzYwMl5BMl5BanBnXkFtZTgwMTE3ODk5MDI@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTg5Njg1MzIwNl5BMl5BanBnXkFtZTgwNDU1NjczMDI@._V1_UX182_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "TA Cure for Wellness",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/fox/a-cure-for-wellness/a-cure-for-wellness-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 38
+            }
+        ]
+    },
+    {
+        "Genre": {
+            "Name": "Sci-Fi & Fantasy",
+            "Description": "Catch the latest Sci-Fi & Fantasy movies"
+        },
+        "Videos": [
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Scott Derrickson"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Benedict Cumberbatch",
+                            "Chiwetel Ejiofor",
+                            "Rachel McAdams"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Jon Spaihts",
+                            "Scott Derrickson"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A former neurosurgeon embarks on a journey of healing only to be drawn into the world of the mystic arts.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/marvel/marvelsdoctorstrange/doctor-strange-tlr2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BOTU3MTAxNjE3MF5BMl5BanBnXkFtZTgwNTM1MzYxMDI@._V1_CR0,60,640,360_AL_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM2ODA4MTM0M15BMl5BanBnXkFtZTgwNzE5OTYxMDI@._V1_UY268_CR0,0,182,268_AL__QL50.jpg",
+                "VideoTitle": "Doctor Strange",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/marvel/marvelsdoctorstrange/doctor-strange-tlr2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 39
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Gareth Edwards"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Felicity Jones",
+                            "Diego Luna",
+                            "Alan Tudyk"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Chris Weitz",
+                            "Tony Gilroy"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "The Rebel Alliance makes a risky move to steal the plans for the Death Star, setting up the epic saga to follow.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/lucasfilm/rogueoneastarwarsstory/rogue-one-a-star-wars-story-trailer-3_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjM4MTE1OTEwM15BMl5BanBnXkFtZTgwNjAzNjc3MDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt3748528&apikey=9d5591cd",
+                "VideoTitle": "Rouge One",
+                "VideoTrailerFileId": "http://192.168.2.183/residentevilafinal.mp4",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": "40"
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "Justin Kurzel"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Michael Fassbender",
+                            "Marion Cotillard",
+                            "Jeremy Irons"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "Michael Lesslie",
+                            "Adam Cooper"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/fox/assassinscreed/assassins-creed-trailer-2_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjMyMzU3MzQ5MV5BMl5BanBnXkFtZTgwMTkzMTYzMDI@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt2094766&apikey=9d5591cd",
+                "VideoTitle": "Assassin's Creed",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/fox/assassinscreed/assassins-creed-trailer-2_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 41
+            },
+            {
+                "VideoCast": [
+                    {
+                        "CastList": [
+                            "David Ayer"
+                        ],
+                        "CastRole": "Director"
+                    },
+                    {
+                        "CastList": [
+                            "Will Smith",
+                            "Jared Leto",
+                            "Margot Robbie"
+                        ],
+                        "CastRole": "Actors"
+                    },
+                    {
+                        "CastList": [
+                            "David Ayer"
+                        ],
+                        "CastRole": "Writers"
+                    }
+                ],
+                "VideoDescription": "A secret government agency recruits some of the most dangerous incarcerated super-villains to form a defensive task force. Their first mission: save the world from the apocalypse.",
+                "VideoFileId": "http://movietrailers.apple.com/movies/wb/suicidesquad/suicide-squad-comic-con-trailer_h720p.mov",
+                "VideoPosterFileId": "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk1ODM0MTAwMl5BMl5BanBnXkFtZTgwNjIzMTk1ODE@._V1_UX477_CR0,0,477,268_AL__QL50.jpg",
+                "VideoSmallPosterFileId": "http://img.omdbapi.com/?i=tt1386697&apikey=9d5591cd",
+                "VideoTitle": "Suicide Squad",
+                "VideoTrailerFileId": "http://movietrailers.apple.com/movies/wb/suicidesquad/suicide-squad-comic-con-trailer_h720p.mov",
+                "VideoRuntimeMinutes": "120 min",
+                "VideoReleaseDate": "20 Feb 2016",
+                "SchemaVersion": 0,
+                "SequenceNumber": 0,
+                "CreatedTimestamp": "",
+                "UpdatedTimestamp": "",
+                "VideoContentRating": "UA",
+                "Id": 42
+            }
+        ]
+    }
+]

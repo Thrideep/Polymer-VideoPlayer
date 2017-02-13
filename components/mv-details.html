@@ -1,42 +1,79 @@
 <dom-module id="mv-details">
     <style>
+
+    /* The Overlay (background) */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y:hidden;
+    background-color: #FFF;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/*@media screen and (max-height: 450px) {
+    .overlay .right {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}*/
+
         .right {
             float: right;
         }
         
         .container {
-            @apply(--layout-horizontal);
+            @apply(--layout-vertical);
         }
         
+        .childContainer{
+            @apply(--layout-horizontal);
+        }
+
         .flexchild {
             background-color: var(--paper-grey-200);
-            padding-left: 20px;
+            /*padding-left: 20px;*/
             @apply(--layout-flex);
             @apply(--paper-font-common-base);
         }
         
-        paper-fab.blue {
-            --paper-fab-background: var(--paper-red-500);
-            --paper-fab-keyboard-focus-background: var(--paper-red-900);
-        }
-        
-        paper-card {
-            cursor: pointer;
-        }
-        
         .right {
             text-align: right;
+            color: white;
         }
         
         #dialog h3 {
             padding: 5px;
             margin: 0;
         }
+
+        #playDiv h3{
+            padding: 5px;
+            margin: 0;
+            background-color: black;
+            height: 45px;
+        }
         
-        div.advertisement {
-            height: 75px;
+        div.advertisement1 {
+            height:80px;
             background-image: url('../assets/images/advert.jpg');
             background-repeat: no-repeat;
+            float: left;
+            width: 792px;
+        }
+
+        div.advertisement2 {
+            height:80px;
+            background-image: url('../assets/images/example80.png ');
+            background-repeat: no-repeat;
+            /*background-size: 800px 80px;*/
+            float: right;
+            width: 790px;
         }
         
         .paper-dialog-0>*:last-child {
@@ -47,108 +84,388 @@
             cursor: pointer;
         }
         
-        section.trailer>paper-fab {
-            display: inline;
+        section.trailer>paper-button {
+              background-color: #ed3b3b;
+              color: white;
+              margin-top: 15px;
+              margin-left: 0px;
         }
+
+        #playDiv{
+            display: none;
+        }
+
+        .center{
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+
+        #smallPoster{
+            position: absolute;
+            top: 300px;
+            padding-left: 15px;
+        }
+
+        .titleDiv{
+          margin-left: 240px;  
+        }
+        
+        .buttons {
+            position: relative;
+            padding: 8px 8px 8px 24px;
+            margin: 0;
+
+            color: var(--paper-dialog-button-color, --primary-color);
+
+            @apply(--layout-horizontal);
+            @apply(--layout-end-justified);
+        }
+        #poster{
+            width: 600px;
+        }
+
+        #castDiv{
+            width: 600px;
+            margin-left: 400px;
+            margin-right: 400px;
+        }
+
+        #castDiv p{
+            padding-top: 35px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        #childDiv{
+            width: 600px;
+        }
+
+        ul{
+            padding-left: 15px;
+        }
+
+        li{
+            font-weight: bold;
+        }
+        
+        article>h1{
+            margin-bottom: 0px;
+        }
+        
+        article>p{
+            margin-top: 0px;
+            font-size: 12px;
+        }
+
     </style>
-    <template><paper-progress id="progress"></paper-progress>
-      <div class="container">
-        <div>
-            <paper-card image="{{movie.Poster}}" on-tap="playTrailer">
-                   <paper-ripple></paper-ripple>
+<template>
+    <paper-progress id="progress"></paper-progress>
+    <div class="container">
+        <div class="center">
+            <paper-card id="poster" image="{{movie.VideoPosterFileId}}">
+                <paper-ripple></paper-ripple>
             </paper-card>
         </div>
-        <div class="flexchild">
-            <article>
-                <h1>{{movie.Title}}</h1>
-                <p>{{movie.Plot}}</p>
-            </article>
-            <section class="trailer" on-tap="playTrailer">
-                <paper-fab class="blue" icon="av:av:play-arrow"></paper-fab>Trailer                
-            </section>
+
+        <div class="flexchild center" id="childDiv">
+            <div id="smallPoster">
+                <paper-card image="{{movie.VideoSmallPosterFileId}}">
+                    <paper-ripple></paper-ripple>
+                </paper-card>
+            </div>
+            <div class="titleDiv">
+                <article>
+                    <h1>{{movie.VideoTitle}}</h1>
+                    <p>[[VideoInfo]]</p>
+                </article>
+                <section class="trailer">
+                    <paper-button raised on-tap="playTrailer">
+                        Play Trailer
+                    </paper-button>
+                    <paper-button raised on-tap="playTrailer">
+                        Play Video
+                    </paper-button>
+                </section>
+            </div>
+        </div>
+        <div id="castDiv" class="flexchild">
+            <p>{{movie.VideoDescription}}</p>
             <ul>
-                <li>Released: {{movie.Released}}</li>
-                <li>Runtime: {{movie.Runtime}}</li>
-                <li>Cast: {{movie.Actors}}</li>                
-                <li>Writer: {{movie.Writer}}</li>
+                <li>Director</li>
+                [[Directors]]
+                <li> <br/></li>
+                <li>Actors</li>
+                [[Actors]]
+                <li><br/></li>
+                <li>Writers</li>
+                [[Writers]]
             </ul>
+        </div>
 
-            <paper-dialog id="dialog" vertical-align="top" entry-animation="scale-up-animation" exit-animation="fade-out-animation" modal="true">
-                 <h3>{{movie.Title}}<paper-icon-button class="right" icon="close" on-tap="clearModal"></paper-icon-button></h3>
-                 <div id="jwPlayer"></div>
-                 <div class="advertisement"></div>
-            </paper-dialog>
-    
+        <div id="playDiv" class="overlay">
+            <h3>
+                <paper-icon-button class="right" icon="close" on-tap="clearModal"></paper-icon-button>
+            </h3>
+            <div id="jwPlayer"></div>
+            <div class="advertisement1"></div>
+            <div class="advertisement2"></div>
+        </div>
+
     </div>
-    </div>
+    <iron-ajax url="/assets/genreVideos.json" id="ajaxElement" handle-as="json" on-response="movieResponse"></iron-ajax>
 
-    <iron-ajax url="/assets/movies.json" id="ajaxElement" handle-as="json" on-response="movieResponse"></iron-ajax>
-    </template>
-    <script>
-        Polymer({
-            is: "mv-details",
-            properties: {
-                omdbURL: {
-                    type: String,
-                    value: ''
-                },
-                imdbID: {
-                    type: String,
-                    value: ''
-                },
-                route: {
-                    type: Object,
-                    reflectToAttribute: true
-                },
-                movie: {
-                    type: Object,
-                    value: {}
-                }
+</template>
+<script>
+    Polymer({
+        is: "mv-details",
+        properties: {
+            omdbURL: {
+                type: String,
+                value: ''
             },
-            observers: [
-                '_routePageChanged(routeData.page)',
-            ],
-            _routePageChanged: function(routeData) {
-                console.log("From mv-details:", routeData);
-
+            imdbID: {
+                type: String,
+                value: ''
             },
-            attributeChanged: function() {
-                this.imdbID = this.route.path.slice(1);
-                this.omdbURL = 'http://www.omdbapi.com/?i=' + this.route.path.slice(1);
-                this.$.ajaxElement.generateRequest();
+            route: {
+                type: Object,
+                reflectToAttribute: true
             },
-            movieResponse: function(response) {
-                var movies = response.detail.response;
-                console.log(movies, this.imdbID);
-                var iID = this.imdbID;
-                var fMovies = movies.filter(function(mv) {
-                    return mv.imdbID == iID;
-                });
-
-                this.movie = fMovies[0];
-                if (!this.movie) return
-
-                var player = jwplayer('jwPlayer');
-                var tUrl = this.movie.Trailer ? this.movie.Trailer : '//content.jwplatform.com/manifests/1b02B03R.m3u8';
-                player.setup({
-                    file: tUrl,
-                    image: this.movie.Poster.replace('https:', ''),
-                    autostart: false,
-                    width: 700
-                });
-
-                console.log("From mv-details :", this.movie);
+            movie: {
+                type: Object,
+                value: {}
             },
-            playTrailer: function() {
-                this.$.dialog.open();
-                var player = jwplayer('jwPlayer');
-                player.play();
+            Directors: {
+                type: String,
+                value: ''
             },
-            clearModal: function() {
-                this.$.dialog.close();
-                var player = jwplayer('jwPlayer');
-                player.stop();
+            Actors: {
+                type: String,
+                value: ''
+            },
+            Writers: {
+                type: String,
+                value: ''
+            },
+            VideoInfo: {
+                type: String,
+                value: ''
             }
-        })
-    </script>
+        },
+        observers: [
+            '_routePageChanged(routeData.page)',
+        ],
+        _routePageChanged: function (routeData) {
+            //console.log("From mv-details:", routeData);
+
+        },
+        attributeChanged: function () {
+            this.imdbID = this.route.path.slice(1);
+            this.omdbURL = 'http://www.omdbapi.com/?i=' + this.route.path.slice(1);
+            this.$.ajaxElement.generateRequest();
+        },
+        movieResponse: function (response) {
+            //var movies = response.detail.response;
+            var movies = [];
+            debugger;
+            response.detail.response.map(function (el) {
+                return el.Videos;
+            }).map(function (items) {
+                items.forEach(function (item) {
+                    movies.push(item);
+                });
+            });
+            //
+            //console.log(movies, this.imdbID);
+            var iID = this.imdbID;
+            var fMovies = movies.filter(function (mv) {
+                return mv.Id == iID;
+            });
+
+            this.movie = fMovies[0];
+            if (!this.movie) return;
+
+            this.formatVideoInfo();
+
+            var directors = this.movie.VideoCast.filter(function (cast) {
+                return cast.CastRole === "Director"
+            }).map(function (item) {
+                return item.CastList.toString();
+            });
+            this.Directors = directors[0];
+
+            var actors = this.movie.VideoCast.filter(function (cast) {
+                return cast.CastRole === "Actors"
+            }).map(function (item) {
+                return item.CastList.toString();
+            });
+            this.Actors = actors[0];
+
+            writers = this.movie.VideoCast.filter(function (cast) {
+                return cast.CastRole === "Writers"
+            }).map(function (item) {
+                return item.CastList.toString();
+            });
+            this.Writers = writers[0];
+
+            var player = jwplayer('jwPlayer');
+            document.getElementById("playDiv").style.display = 'none';
+            var tUrl = this.movie.VideoTrailerFileId ? this.movie.VideoTrailerFileId : '//content.jwplatform.com/manifests/1b02B03R.m3u8';
+            player.setup({
+                file: tUrl,
+                image: this.movie.VideoPosterFileId.replace('https:', ''),
+                autostart: false,
+                width: screen.availWidth,
+                height: screen.availHeight - 200
+            });
+
+
+            var timer = 10;
+            var tempTimer = timer; // this has to be timer Observer..
+            var reset = timer;
+            var eventFired = false;
+            var adPlayed = false;
+            var adTimer = timer;
+            player.on('time', function (e) {
+                //seeked = false;
+                //player.off('seek');
+                var duration = e.duration;
+                var pos = Math.floor(e.position);
+                adTimer = timer;
+
+                console.log('playing: ', pos, ' | ', adTimer);
+
+                if (this.getPlaylist()[0].file == tUrl) {
+                    if (!eventFired && pos == adTimer && pos >= reset) {
+                        //debugger;
+                        console.log('Ad - ready to play: ', pos, ' | ', adTimer);
+
+                        eventFired = true;
+                        this.pause(true);
+
+                        //debugger;
+
+                        this.load({
+                            file: "http://192.168.2.183/addnew.mp4",
+                            image: "https://images-na.ssl-images-amazon.com/images/M/MV5BMTk5NTI5MjY0NV5BMl5BanBnXkFtZTgwNzEyMTE2MDI@._V1_SX300.jpg",
+                            autostart: true
+                        });
+                        //this.seek(1).play();
+                        this.pause(false);
+                        //this.play();
+                    }
+                }
+            });
+
+            player.on('complete', function (e) {
+                //debugger;
+                if (this.getPlaylist()[0].file !== tUrl) {
+
+                    this.load({
+                        file: tUrl,
+                        autostart: false
+                    });
+                    eventFired = false;
+                    adPlayed = true;
+                    console.log('finished Ad: ', adPlayed);
+                    timer = timer + reset;
+                    tempTimer = timer;
+
+                    console.log("just before player seeks its old position at where it was paused: ", adTimer);
+
+                    this.seek(adTimer);
+                    //this.play();
+                }
+                else {
+                    adPlayed = false;
+                    timer = 10;
+                    tempTimer = timer;
+                    adTimer = 0;
+                    this.stop();
+                }
+            });
+
+            var positionBeforeSeek;
+            var startPositions = [];
+            
+            player.on('seek', function (e) {
+                console.log("entered seek")
+                console.log("paused video")
+
+                this.pause(true);
+
+                console.log("resumed video")
+
+                positionBeforeSeek = e.position;
+                console.log("seek position", positionBeforeSeek)
+            });
+
+            player.on('seeked', function () {
+                console.log("entered seeked")
+                console.log("seek position", positionBeforeSeek)
+
+                var offset = this.getPosition();
+                console.log("offset: ", offset)
+
+                var secSeeked = offset - positionBeforeSeek;
+                console.log("osecSeekedffset: ", secSeeked)
+
+                console.log("Timer - before : ", tempTimer)
+
+                if (secSeeked < 0) {
+                    timer = Math.floor(tempTimer - secSeeked);
+                }
+                else if (secSeeked > 0) {
+                    timer = Math.floor(tempTimer + secSeeked);
+                }
+
+                console.log("Timer - After : ", timer)
+
+                this.pause(false);
+
+            });
+
+        },
+        playTrailer: function () {
+            document.getElementById("playDiv").style.display = 'block';
+            document.getElementById("playDiv").style.height = "100%";
+            document.getElementById("playDiv").style.width = "100%";
+
+            var player = jwplayer('jwPlayer');
+            var fulsc = document.querySelector('.jw-icon-fullscreen');
+            fulsc.hidden = true;
+            //
+            var url = this.movie.VideoTrailerFileId ? this.movie.VideoTrailerFileId : '//content.jwplatform.com/manifests/1b02B03R.m3u8';
+            player.load({
+                file: url,
+                autostart: true
+            });
+            //debugger;
+            this.resetVideoTimer();
+            player.play();
+        },
+        clearModal: function () {
+            //this.$.dialog.close();
+            document.getElementById("playDiv").style.display = 'none';
+            document.getElementById("playDiv").style.height = "0%";
+
+            var player = jwplayer('jwPlayer');
+            player.stop();
+        },
+        formatVideoInfo: function () {
+            if (this.movie)
+                this.VideoInfo = this.movie.VideoContentRating + ', ' + this.movie.VideoReleaseDate.split(' ')[2] + ', ' + this.movie.VideoRuntimeMinutes;
+        },
+        resetVideoTimer: function () {
+            console.log('reset timer');
+            timer = 10;
+            tempTimer = timer; // this has to be timer Observer..
+            reset = timer;
+            eventFired = false;
+            adPlayed = false;
+            adTimer = timer;
+        }
+
+    })
+</script>
 </dom-module>

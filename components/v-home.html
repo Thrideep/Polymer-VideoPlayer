@@ -2,8 +2,24 @@
 
 <dom-module id="v-home">
     <template>
-    <v-list name="upcoming" up-coming="true" more-url="more/upcoming" id="upcomingMovies" pull-data="true" header-text="Upcoming Movies" hidden$="{{isSearch}}"></v-list>
-    <v-list name="recomended" more-url="more/recomended" id="recomendedMovies" pull-data="true" header-text="Recomended Movies" hidden$="{{isSearch}}"></v-list>
+        <!--<v-list name="upcoming"  more-url="more/upcoming" id="upcomingMovies" pull-data="true" header-text="Upcoming Movies" hidden$="{{isSearch}}"></v-list>
+    <v-list name="recomended" more-url="more/recomended" id="recomendedMovies" pull-data="true" header-text="Recomended Movies" hidden$="{{isSearch}}"></v-list>-->
+
+        <v-list name="newMovies" more-url="more/New Releases" id="newReleaseMovies" pull-data="true" header-text="New Release Movies"
+            hidden$="{{isSearch}}"></v-list>
+        <v-list name="action" more-url="more/Action & Adventure" id="actionMovies" pull-data="true" header-text="Action & Adventure Movies"
+            hidden$="{{isSearch}}"></v-list>
+        <v-list name="animation" more-url="more/Animation" id="animationMovies" pull-data="true" header-text="Animation Movies" hidden$="{{isSearch}}"></v-list>
+        <v-list name="comedy" more-url="more/Comedy" id="comedyMovies" pull-data="true" header-text="Comedy Movies" hidden$="{{isSearch}}"></v-list>
+        <v-list name="documentary" more-url="more/Documentary" id="documentaryMovies" pull-data="true" header-text="Documentary Movies"
+            hidden$="{{isSearch}}"></v-list>
+        <v-list name="drama" more-url="more/Drama" id="dramaMovies" pull-data="true" header-text="Drama Movies" hidden$="{{isSearch}}"></v-list>
+        <v-list name="family" more-url="more/Family" id="familyMovies" pull-data="true" header-text="Family Movies" hidden$="{{isSearch}}"></v-list>
+        <v-list name="horror" more-url="more/Horror" id="horrorMovies" pull-data="true" header-text="Horror Movies" hidden$="{{isSearch}}"></v-list>
+        <v-list name="mystery" more-url="more/Mystery & Suspense" id="mysteryMovies" pull-data="true" header-text="Mystery & Suspense Movies"
+            hidden$="{{isSearch}}"></v-list>
+        <v-list name="fantasy" more-url="more/Sci-Fi & Fantasy" id="mysteryMovies" pull-data="true" header-text="Sci-Fi & Fantasy Movies"
+            hidden$="{{isSearch}}"></v-list>
     </template>
     <script>
         Polymer({
@@ -12,13 +28,27 @@
                 isSearch: {
                     type: Boolean,
                     value: false
+                },
+                GenresList: {
+                    type: Array,
+                    value: ['New Releases',
+                        'Action & Adventure',
+                        'Animation',
+                        'Comedy',
+                        'Documentary',
+                        'Drama',
+                        'Family',
+                        'Horror',
+                        'Mystery & Suspense',
+                        'Sci-Fi & Fantasy'
+                    ]
                 }
             },
-            searchResults: function(data) {
+            searchResults: function (data) {
                 this.isSearch = true;
                 searchResult.dataBind(data);
             },
-            hideSearch: function() {
+            hideSearch: function () {
                 this.isSearch = false;
                 searchResult.dataBind([]);
             }

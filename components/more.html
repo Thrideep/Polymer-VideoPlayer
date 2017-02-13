@@ -21,16 +21,18 @@
                     reflectToAttribute: true
                 }
             },
-            attributeChanged: function() {
-                var genre = location.pathname.split('/')[2];
+            attributeChanged: function () {
+                //debugger;
+                var genre = decodeURI(location.pathname).split('/')[2];
                 if (genre) {
                     this.headerText = genre.charAt(0).toUpperCase() + genre.slice(1) + " Movies";
                     this.$.moreList.noofItems = 100;
                     this.$.moreList.upComing = true;
+                    this.$.moreList.byGenre = genre;
                 }
                 this.$.moreList.getMovies();
-                this.$.moreList.addEventListener('itemSelected', function(data) {
-                    this.page = '/mv-details/' + data.detail.imdbID;
+                this.$.moreList.addEventListener('itemSelected', function (data) {
+                    this.page = '/mv-details/' + data.detail.Id;
                     window.history.pushState({}, data.detail, this.page);
                     window.dispatchEvent(new CustomEvent('location-changed'));
                 });

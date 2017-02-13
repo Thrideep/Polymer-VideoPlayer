@@ -29,7 +29,7 @@
                 }
                 this.$.genreList.getMovies();
                 this.$.genreList.addEventListener('itemSelected', function(data) {
-                    this.page = '/mv-details/' + data.detail.imdbID;
+                    this.page = '/mv-details/' + data.detail.Id;
                     window.history.pushState({}, data.detail, this.page);
                     window.dispatchEvent(new CustomEvent('location-changed'));
                 });

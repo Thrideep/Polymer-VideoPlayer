@@ -10,8 +10,8 @@
 <link rel="import" href="../bower_components/font-roboto/roboto.html">
 
 <dom-module id="v-list">
-	<template>
-		<style>
+    <template>
+        <style>
 			div.wrapper {
 				margin-bottom: 15px;
 			}
@@ -44,7 +44,7 @@
 			
 			paper-card {
 				max-width: 150px;
-				height: 400px;
+				height: 380px;
 				vertical-align: top;
 				margin: 5px;
 			}
@@ -94,189 +94,200 @@
 				color: #FFF;
 			}
 		</style>
-		<div class="wrapper">
-			<header class="header">
-				<section hidden$="{{hideTitle}}">
-					<h3 class="list-header-text">{{headerText}}</h3>
-					<a id="moreMovies" name="upcoming" href="{{moreUrl}}" class="seemore right">
-						<paper-button raised>See More</paper-button>
-					</a>
-				</section>
-			</header>
-			<!-- local DOM goes here -->
-			<template is="dom-repeat" items="{{movies}}">
-				<div class="movie-container">
-					<paper-card image="{{item.Poster}}" class="movie-card" on-tap="details">
-						<paper-ripple></paper-ripple>
-						<div class="card-content">
-							<div class="title">{{item.Title}}</div>
-							<!--<section><p id="rating" class="small">{{item.imdbRating}}</p></section>-->
-							<p class="small">[[formatPlot(item.Plot)]]</p>
-							<!--<p class="small right">{{item.Genre}}</p></section>-->
-						</div>
-					</paper-card>
-				</div>
-			</template>
+<div class="wrapper">
+    <header class="header">
+        <section hidden$="{{hideTitle}}">
+            <h3 class="list-header-text">{{headerText}}</h3>
+            <a id="moreMovies" name="upcoming" href="{{moreUrl}}" class="seemore right">
+                <paper-button raised>More</paper-button>
+            </a>
+        </section>
+    </header>
+    <!-- local DOM goes here -->
+    <template is="dom-repeat" items="{{movies}}">
+        <div class="movie-container">
+            <paper-card image="{{item.VideoSmallPosterFileId}}" class="movie-card" on-tap="details">
+                <paper-ripple></paper-ripple>
+                <div class="card-content">
+                    <div class="title">{{item.VideoTitle}}</div>
+                    <!--<section><p id="rating" class="small">{{item.imdbRating}}</p></section>-->
+                    <p class="small">[[formatPlot(item.VideoDescription)]]</p>
+                    <!--<p class="small right">{{item.Genre}}</p></section>-->
+                </div>
+            </paper-card>
+        </div>
+    </template>
 
 
-			<template is="dom-if" if="{{noDataAvailable}}">
-				<h2 class="nodata">Opps! No results were found.</h2>
-			</template>
+    <template is="dom-if" if="{{noDataAvailable}}">
+        <h2 class="nodata">Opps! No results were found.</h2>
+    </template>
 
-			<iron-ajax url="{{dataUrl}}" id="ajaxElement" handle-as="json" on-response="movieResponse"></iron-ajax>
+    <iron-ajax url="{{dataUrl}}" id="ajaxElement" handle-as="json" on-response="movieResponse"></iron-ajax>
 
-	</template>
-	</div>
-	<script>
-        Polymer({
-            is: 'v-list',
-            properties: {
-                id: {
-                    type: String,
-                    value: "",
-                    reflectToAttribute: true
-                },
-                noofItems: {
-                    type: Number,
-                    value: 5,
-                    reflectToAttribute: true
-                },
-                movies: {
-                    type: Array,
-                    value: []
-                },
-                headerText: {
-                    type: String,
-                    value: ""
-                },
-                pullData: {
-                    type: Boolean,
-                    value: false
-                },
-                hideMoreButton: {
-                    type: Boolean,
-                    value: false
-                },
-                moreUrl: {
-                    type: String,
-                    value: "",
-                    reflectToAttribute: true
-                },
-                noDataAvailable: {
-                    type: Boolean,
-                    computed: 'recordCount(movies)'
-                },
-                dataUrl: {
-                    type: String,
-                    value: "/assets/movies.json",
-                    reflectToAttribute: true
-                },
-                upComing: {
-                    type: Boolean,
-                    value: false,
-                    reflectToAttribute: true
-                },
-                byGenre: {
-                    type: String,
-                    reflectToAttribute: true
-                },
-                hideTitle: {
-                    type: Boolean,
-                    reflectToAttribute: true
-                }
+    </template>
+</div>
+<script>
+    Polymer({
+        is: 'v-list',
+        properties: {
+            id: {
+                type: String,
+                value: "",
+                reflectToAttribute: true
             },
-            recordCount: function(data) {
-                return data.length == 0;
+            noofItems: {
+                type: Number,
+                value: 5,
+                reflectToAttribute: true
             },
-            formatPlot: function(plot) {
-                var formattedStr = plot;
-                if (formattedStr.length > 180) {
-                    formattedStr = plot.substring(0, 180) + '...';
-                }
-                return formattedStr;
+            movies: {
+                type: Array,
+                value: []
             },
-            movieResponse: function(response) {
-                sessionStorage.setItem(this.id + "-movie-list", JSON.stringify(response.detail.response));
-
-                var mvs = response.detail.response;
-                if (this.upComing) {
-                    mvs = mvs.filter(function(mv) {
-                        var rlsd = Date.parse(mv.Released);
-                        return rlsd > new Date();
-                    });
-                }
-                //  else {
-                //     mvs = mvs.filter(function(mv) {
-                //         var rlsd = Date.parse(mv.Released);
-                //         return rlsd < new Date();
-                //     });
-                // }
-
-                this.movies = mvs.splice(0, this.noofItems);
-
-                if (this.byGenre) {
-                    var keyWords = [];
-                    var keyWord = this.byGenre.toLowerCase();
-                    if (keyWord.indexOf('&') > 0) {
-                        keyWords = keyWord.replace('/', '').split('&');
-                    }
-
-                    if (keyWords.length > 0) {
-                        mvs = mvs.filter(function(e) {
-                            return this.indexOf(e) < 0;
-                        }, keyWords);
-                    } else {
-                        mvs = mvs.filter(function(mv) {
-                            return mv.Genre.toLowerCase().indexOf(keyWord) > 0;
-                        });
-                    }
-                    this.movies = mvs;
-                    console.log(mvs);
-                }
-
+            headerText: {
+                type: String,
+                value: ""
             },
-            getMovies() {
-                this.$.ajaxElement.generateRequest();
-                // var movieData = sessionStorage.getItem(this.id + "-movie-list");
-                // if (!movieData) {
-                //     console.log("Requesting url:", this.url);
-
-                // }
+            pullData: {
+                type: Boolean,
+                value: false
             },
-            dataBind: function(source) {
-                this.movies = source;
+            hideMoreButton: {
+                type: Boolean,
+                value: false
             },
-            ready: function() {
-                debugger;
-                console.log(this.id);
-                var avaialbeWidth = screen.availWidth;
-                var count = parseInt(avaialbeWidth / 170);
-                if (avaialbeWidth <= avaialbeWidth + (count * 5)) {
-                    this.noofItems = count - 1;
-                } else {
-                    this.noofItems = count;
-                }
-                console.log(this.pullData);
-                if (this.pullData) {
-                    this.getMovies();
-                }
-
-                if (this.hideMoreButton) {
-                    this.$.moreMovies.style.display = 'none';
-                }
+            moreUrl: {
+                type: String,
+                value: "",
+                reflectToAttribute: true
             },
-            viewallMovies: function() {
-                console.log("Route Change");
-                this.set('route.path', "/more");
+            noDataAvailable: {
+                type: Boolean,
+                computed: 'recordCount(movies)'
             },
-            details: function(event) {
-                var item = event.model.get('item');
-                var oItem = this.movies.filter(function(i) {
-                    return i.imdbID == item.imdbID;
-                });
-                console.log(oItem)
-                this.fire('itemSelected', oItem[0]);
+            dataUrl: {
+                type: String,
+                value: "/assets/genreVideos.json",
+                reflectToAttribute: true
+            },
+            upComing: {
+                type: Boolean,
+                value: false,
+                reflectToAttribute: true
+            },
+            byGenre: {
+                type: String,
+                reflectToAttribute: true
+            },
+            hideTitle: {
+                type: Boolean,
+                reflectToAttribute: true
             }
-        });
-    </script>
+        },
+        recordCount: function (data) {
+            return data.length == 0;
+        },
+        formatPlot: function (plot) {
+            var formattedStr = plot;
+            if (formattedStr.length > 50) {
+                formattedStr = plot.substring(0, 80) + '...';
+            }
+            return formattedStr;
+        },
+        movieResponse: function (response) {
+            debugger;
+            sessionStorage.setItem(this.id + "-movie-list", JSON.stringify(response.detail.response));
+
+            var genres = response.detail.response;
+            debugger;
+
+            mvs = [];
+            var all = response.detail.response.map(function (el) {
+                return el.Videos;
+            }).map(function (items) {
+                items.forEach(function (item) {
+                    mvs.push(item);
+                });
+            });
+
+            // if (this.upComing) {
+            //     mvs = mvs.filter(function(mv) {
+            //         var rlsd = Date.parse(mv.Released);
+            //         return rlsd > new Date();
+            //     });
+            // }
+            //  else {
+            //     mvs = mvs.filter(function(mv) {
+            //         var rlsd = Date.parse(mv.Released);
+            //         return rlsd < new Date();
+            //     });
+            // }
+
+            this.movies = mvs.splice(0, this.noofItems);
+
+            if (this.byGenre) {
+                debugger;
+                var keyWord = this.byGenre.toLowerCase().replace('/', '');;
+
+                mvs = [];
+                genres.filter(function (g) {
+                    return g.Genre.Name.toLowerCase() === keyWord;
+                }).map(function (el) {
+                    return el.Videos;
+                }).map(function (items) {
+                    items.forEach(function (item) {
+                        mvs.push(item);
+                    });
+                });
+
+                this.movies = mvs;
+                //console.log(mvs);
+            }
+        },
+        getMovies() {
+            this.$.ajaxElement.generateRequest();
+            // var movieData = sessionStorage.getItem(this.id + "-movie-list");
+            // if (!movieData) {
+            //     console.log("Requesting url:", this.url);
+
+            // }
+        },
+        dataBind: function (source) {
+            this.movies = source;
+        },
+        ready: function () {
+            var avaialbeWidth = screen.availWidth;
+            var count = parseInt(avaialbeWidth / 170);
+            if (avaialbeWidth <= avaialbeWidth + (count * 5)) {
+                this.noofItems = count - 1;
+            } else {
+                this.noofItems = count;
+            }
+            //console.log("pullData: ", this.pullData);
+
+            if (this.pullData) {
+                if (this.moreUrl)
+                    this.byGenre = this.moreUrl.split('/')[1];
+                this.getMovies();
+            }
+
+            if (this.hideMoreButton) {
+                this.$.moreMovies.style.display = 'none';
+            }
+        },
+        viewallMovies: function () {
+            //console.log("Route Change");
+            this.set('route.path', "/more");
+        },
+        details: function (event) {
+            var item = event.model.get('item');
+            var oItem = this.movies.filter(function (i) {
+                return i.Id == item.Id;
+            });
+            //console.log(oItem)
+            this.fire('itemSelected', oItem[0]);
+        }
+    });
+</script>
 </dom-module>
